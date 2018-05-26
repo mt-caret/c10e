@@ -4,3 +4,6 @@ version = "0.1.0"
 authors = ["Masayuki Takeda <mtakeda.enigsol@gmail.com>"]
 
 [dependencies]
+natural = "0.3.0"
+rayon = "1.0.1"
+stemmer = "0.3.2"
