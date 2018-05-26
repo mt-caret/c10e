@@ -49,6 +49,8 @@ fn main() {
         .par_iter()
         .flat_map(|content| canonicalize(&content, &stopwords))
         .collect::<Vec<_>>();
+
+    eprintln!("Sorting {} words...", result.len());
     result.par_sort_unstable();
 
     eprintln!("Counting words...");
